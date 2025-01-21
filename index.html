@@ -30,16 +30,17 @@
         .iframe-container {
             display: flex;
             justify-content: center;
-            overflow-x: auto; /* Allow horizontal scrolling if needed */
+            overflow: hidden;
             padding: 10px;
+            background-color: #f8f8f8; /* Match background color */
         }
         iframe {
-            width: 90%; /* Fit the iframe within the container */
-            max-width: 1500px; /* Limit max width for large screens */
-            height: 1500px; /* Set height for better visibility */
-            transform: scale(1.2) translate(-10%, -5%); /* Zoom and adjust positioning */
-            transform-origin: top left; /* Anchor the transformation */
-            border: none; /* Remove default border */
+            width: 100%; /* Fill the entire container width */
+            max-width: 1100px; /* Limit the maximum width for larger screens */
+            height: 1500px; /* Adjust height */
+            transform: scale(1.3); /* Zoom in the content */
+            transform-origin: top left; /* Maintain the content alignment */
+            border: none; /* Remove the border */
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
         }
     </style>
