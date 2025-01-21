@@ -4,39 +4,58 @@
     <title>Data Visualization Project</title>
     <style>
         body {
-            margin-left: 30px; /* Add space from the left for the whole body */
-            font-family: Arial, sans-serif; /* Optional: Improve font readability */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
         }
-        iframe {
-            width: 150%; /* Increase the iframe width */
-            height: 1800px; /* Increase height for better visibility */
-            transform: scale(2); /* Double the zoom */
-            transform-origin: top left; /* Anchor the zoom to the top-left corner */
-            border: none; /* Remove any border */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
         }
         h1 {
-            margin-top: 20px; /* Optional: Add space above the heading */
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 10px;
         }
         p {
-            margin-top: 15px; /* Add some space above the paragraph */
-            line-height: 1.6; /* Improve readability with line spacing */
+            text-align: center;
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin: 0 auto 30px;
+            max-width: 900px;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+        }
+        iframe {
+            width: 80%; /* Make it take 80% of the available width */
+            height: 1000px;
+            border: none;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
 <body>
 
-    <h1>Exploring Data Visualization Techniques</h1>
+    <div class="container">
+        <h1>Exploring Data Visualization Techniques</h1>
 
-    <p>
-        This project highlights the use of advanced data visualization techniques to effectively analyze and convey key trends in food insecurity and poverty. 
-        The objective was to source relevant data and craft a compelling elevator pitch for a senator, utilizing no more than two visualizations to succinctly 
-        and persuasively communicate the critical insights.
-    </p>
+        <p>
+            This project highlights the use of advanced data visualization techniques to effectively analyze and convey key trends in food insecurity and poverty. 
+            The objective was to source relevant data and craft a compelling elevator pitch for a senator, utilizing no more than two visualizations to communicate the critical insights.
+        </p>
 
-    <!-- Embed PDF with higher zoom level -->
-    <iframe 
-        src="https://docs.google.com/gview?url=https://marjetev.github.io/DataVisualization/Story6.pdf&embedded=true">
-    </iframe>
+        <div class="iframe-container">
+            <!-- Embed PDF with styling -->
+            <iframe 
+                src="https://docs.google.com/gview?url=https://marjetev.github.io/DataVisualization/Story6.pdf&embedded=true">
+            </iframe>
+        </div>
+    </div>
 
 </body>
 </html>
