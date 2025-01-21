@@ -11,7 +11,7 @@
             color: #333;
         }
         .container {
-            max-width: 100%; /* Allow the container to use full page width */
+            max-width: 100%;
             margin: 0 auto;
             padding: 20px;
         }
@@ -30,17 +30,17 @@
         .iframe-container {
             display: flex;
             justify-content: center;
-            overflow-x: auto; /* Allow horizontal scrolling if content overflows */
-            padding: 10px; /* Add padding for better spacing */
+            overflow-x: auto; /* Allow horizontal scrolling if needed */
+            padding: 10px;
         }
         iframe {
-            width: 90%; /* Fit within the container width */
-            max-width: 1500px; /* Limit maximum width */
-            height: 1500px; /* Increase height for better view */
-            transform: scale(1.5); /* Zoom into the PDF */
-            transform-origin: top left; /* Anchor the zoom */
-            border: none;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            width: 90%; /* Fit the iframe within the container */
+            max-width: 1500px; /* Limit max width for large screens */
+            height: 1500px; /* Set height for better visibility */
+            transform: scale(1.2) translate(-10%, -5%); /* Zoom and adjust positioning */
+            transform-origin: top left; /* Anchor the transformation */
+            border: none; /* Remove default border */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
         }
     </style>
 </head>
@@ -51,12 +51,12 @@
 
         <p>
             This project highlights the use of advanced data visualization techniques to effectively analyze and convey key trends in food insecurity and poverty. 
-            The objective was to source relevant data and craft a compelling elevator pitch for a senator, utilizing no more than two visualizations to succinctly 
-            and persuasively communicate the critical insights.
+            The objective was to source relevant data and craft a compelling elevator pitch for a senator, utilizing no more than two visualizations to communicate 
+            the relationship between poverty and food insecurity.
         </p>
 
         <div class="iframe-container">
-            <!-- Embed PDF with better scaling -->
+            <!-- Embed PDF with adjusted styling -->
             <iframe 
                 src="https://docs.google.com/gview?url=https://marjetev.github.io/DataVisualization/Story6.pdf&embedded=true">
             </iframe>
